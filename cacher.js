@@ -7,7 +7,7 @@ const HttpsProxyAgent = require('https-proxy-agent');
 const Promise = require('bluebird');
 
 const client = redis.createClient({
-  url: "redis://localhost:6379",
+  url: process.env.REDIS_URL,
 });
 
 const cacheTtlSecs = 5 * 60; // 5 minutes
