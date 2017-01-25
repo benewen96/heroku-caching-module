@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const fetch = require('node-fetch');
 const redis = require('redis');
 
@@ -79,13 +81,5 @@ const heroku = (request) => {
     });
   });
 }
-
-heroku('apps')
-.then((herokuResp) => {
-  console.log(herokuResp);
-})
-.catch((err) => {
-  console.log(err);
-});
 
 module.exports = heroku;

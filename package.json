@@ -7,5 +7,12 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ben Ewen",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "dotenv": "^4.0.0",
+    "https-proxy-agent": "^1.0.0",
+    "node-fetch": "^1.6.3",
+    "redis": "^2.6.5"
+  }
 }
